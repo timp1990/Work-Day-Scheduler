@@ -50,13 +50,11 @@ for (var time in timeBlocksArray) {
     newTimeBlock.append(newTimeBlockButton);
 };
 
-
-
-
 // Add clear local storage button
 var clearAllButton = $("<button>");
 clearAllButton.text("Clear All");
 clearAllButton.addClass("btn btn-danger");
+clearAllButton.css("margin-top", "20px");
 timeBlockContainerEl.append(clearAllButton);
 clearAllButton.on('click', function () {
     localStorage.clear();
